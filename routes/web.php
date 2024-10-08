@@ -25,7 +25,7 @@ Route::post('/login', 'Auth\LoginController@login');
 
 //新規ユーザー登録ページ
 // ①新規ユーザー画面を表示させる
-Route::get('/register', 'Auth\RegisterController@register');
+Route::get('/register', 'Auth\RegisterController@registerView');
 // ②入力したデータをpostで受け取る
 Route::post('/register', 'Auth\RegisterController@register');
 
